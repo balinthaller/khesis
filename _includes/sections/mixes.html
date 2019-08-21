@@ -1,0 +1,11 @@
+<div class="section-header">
+    <h1>mixes</h1>
+</div>
+<div class="section-mixes section">
+    {% assign ordered_mixes = site.mixes | sort:"release_date" | reverse %}
+    {% for mix in ordered_mixes %}
+    <div class="mixes--mix-card">
+        <img src="/assets/covers/{{ mix.image }}" alt="{{ mix.name }}">
+    </div>
+    {% endfor %}
+</div>

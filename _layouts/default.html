@@ -1,1 +1,36 @@
-{{ content }}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+{%- include header.html -%}
+
+<div class="main-row">
+
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <div class="section-header page-header">
+                <h1>{{ page.title | downcase }}</h1>
+                <a href="#" onclick="toggleMenu()" class="menu-button">{%- include hamburger-icon.html -%}</a>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                {%- include menu.html -%}
+            </div>
+            {{ content }}
+        </div>
+    </main>
+    <div class="main-sidebar">
+        {%- include sidebar.html -%}
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mobile-menu').classList.toggle('visible');
+    }
+</script>
+</body>
+

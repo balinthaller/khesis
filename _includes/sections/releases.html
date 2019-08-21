@@ -1,0 +1,11 @@
+<div class="section-header">
+    <h1>releases</h1>
+</div>
+<div class="section-releases section">
+    {% assign ordered_releases = site.releases | sort:"release_date" | reverse %}
+    {% for release in ordered_releases %}
+    <div class="releases--release-card">
+        <img src="/assets/covers/{{ release.image }}" alt="{{ release.name }}">
+    </div>
+    {% endfor %}
+</div>
