@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Playfair+Display:400,700,900&display=swap');
 
 $padding-global: 32px;
+//$light-grey: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -21,6 +22,10 @@ body {
   background-color: $light-grey;
 }
 
+p {
+  margin-bottom: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
@@ -36,10 +41,18 @@ header {
 
   .site-logo {
     align-self: center;
+
   }
 
   img {
     height: 6vw;
+    @include sm {
+      height: 60px;
+    }
+  }
+
+  @include sm {
+    height: 100px;
   }
 }
 
@@ -53,7 +66,8 @@ header {
 
 .main-sidebar {
   background-color: $dark-grey;
-  width:30vw;
+  width: 400px;
+  min-width: 400px;
 
   @include sm {
     width: 100%;
@@ -128,13 +142,16 @@ header {
 }
 
 .menu-box, .mobile-menu {
+
   ul {
     list-style: none;
     margin-bottom: 0;
+    text-decoration: none;
   }
 
   li {
     font-weight: 500;
+    text-underline: none;
   }
 }
 
@@ -147,8 +164,7 @@ header {
 .mobile-menu {
   display: none;
   background-color: $dark-grey;
-  padding: $padding-global;
-  padding-top: 0;
+  padding: 0 $padding-global $padding-global;
 
   a, & {
     color: $light-grey;
@@ -184,6 +200,13 @@ header {
 
   h1::before {
     content: '— ';
+  }
+
+  @include sm {
+    h1 {
+      font-size: 4rem;
+    }
+    height: 88px;
   }
 
 }
@@ -268,5 +291,54 @@ main {
     color: $light-grey;
     margin: 0 auto;
     font-size: 1.2rem;
+  }
+}
+
+.page, .post {
+  padding: $padding-global;
+}
+
+.page {
+
+  .about-image {
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+
+  }
+  img {
+    //max-width: 100%;
+  }
+
+  .press-shot {
+    max-width: 33%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, sans-serif;
+  }
+}
+
+blockquote {
+  border-left: $dark-grey 3px solid;
+  margin-left: 0;
+  padding-left: 24px;
+}
+
+.bigger {
+  font-size: 2rem;
+}
+
+
+.page.press {
+  img {
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: contain;
+
   }
 }

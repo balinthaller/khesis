@@ -6,7 +6,7 @@
                     <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
                     <span class="post-date">{{ post.date | date: "%B %-d, %Y"}}</span>
                 </div>
-                {{ post.excerpt }}
+                {{ post.content }}
             </div>
             {% if post.image %}
             <img src="/assets/images/{{ post.image }}" alt="{{ post.title }}" />
