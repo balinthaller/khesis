@@ -301,10 +301,8 @@ main {
 .page {
 
   .about-image {
-    min-width: 100%;
-    min-height: 100px;
     max-height: 400px;
-    max-width: 400px;
+    max-width: 100%;
     object-fit: cover;
 
   }
@@ -313,7 +311,10 @@ main {
   }
 
   .press-shot {
-    max-width: 33%;
+    max-width: 30%;
+    max-height: 400px;
+    width: auto;
+    object-fit: contain;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -334,10 +335,9 @@ blockquote {
 
 .page.press {
   img {
-    min-width: 100%;
-    min-height: 100px;
+    max-width: 100%;
     max-height: 400px;
-    max-width: 400px;
+    width: auto;
     object-fit: contain;
 
   }
