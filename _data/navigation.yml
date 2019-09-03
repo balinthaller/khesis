@@ -1,8 +1,8 @@
 - name: Home
-  link: {{site.baseurl}}
+  link: /
 - name: Press
-  link: press
+  link: /press
 - name: About
-  link: about
+  link: /about
 #- name: Contact
 #  link: /contact
