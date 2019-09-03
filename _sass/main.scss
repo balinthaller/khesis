@@ -20,6 +20,8 @@ $screen-sm-max: 900px;
 body {
   font-family: 'Raleway', sans-serif;
   background-color: $light-grey;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 p {
