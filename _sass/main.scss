@@ -73,7 +73,7 @@ header {
 
   @include sm {
     width: 100%;
-    min-width: initial;
+    min-width: 20px;
   }
 
   a {
