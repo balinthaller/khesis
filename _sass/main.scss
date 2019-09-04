@@ -28,12 +28,8 @@ p {
   margin-bottom: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-}
-
 header {
-  background-image: url("/assets/header-img.jpg");
+  //background-image: url("/assets/header-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -68,8 +64,8 @@ header {
 
 .main-sidebar {
   background-color: $dark-grey;
-  width: 400px;
-  min-width: 400px;
+  width: 300px;
+  min-width: 300px;
 
   @include sm {
     width: 100%;
@@ -201,15 +197,19 @@ header {
   flex-direction: row;
   height: 112px;
 
+  h1 {
+    margin-bottom: 4px;
+  }
+
   h1::before {
     content: '— ';
   }
 
   @include sm {
     height: 88px;
-    h1 {
-      margin-bottom: 12px;
-    }
+    //h1 {
+    //  margin-bottom: 12px;
+    //}
   }
 
 }
