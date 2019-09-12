@@ -133,7 +133,6 @@ header {
     display: inline-block;
     color: $light-grey;
     font-style: italic;
-    letter-spacing: 0.5rem;
     text-transform: lowercase;
   }
 }
@@ -144,6 +143,7 @@ header {
   }
   li {
     margin: 0 24px;
+    letter-spacing: 0.5rem;
   }
 
 }
@@ -170,6 +170,8 @@ header {
 
   li {
     //margin: 0 12px;
+    letter-spacing: 0.4rem;
+
   }
 
   @include sm {
@@ -208,6 +210,10 @@ header {
     margin-bottom: 0;
     font-style: italic;
     letter-spacing: 2rem;
+
+    @include sm {
+      //letter-spacing: 1.6rem;
+    }
   }
 
   h1::before {
