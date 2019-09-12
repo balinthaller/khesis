@@ -132,9 +132,8 @@ header {
     text-underline: none;
     display: inline-block;
     color: $light-grey;
-    margin: 0 24px;
     font-style: italic;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.5rem;
     text-transform: lowercase;
   }
 }
@@ -143,6 +142,10 @@ header {
   @include sm {
     display: none;
   }
+  li {
+    margin: 0 24px;
+  }
+
 }
 
 .mobile-menu {
@@ -163,6 +166,10 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
+  }
+
+  li {
+    //margin: 0 12px;
   }
 
   @include sm {
