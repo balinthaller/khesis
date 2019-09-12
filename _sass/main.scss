@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Playfair+Display:400,700,900&display=swap');
 
 $padding-global: 32px;
-//$light-grey: #ffffff;
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 $screen-sm-max: 900px;
@@ -29,17 +32,14 @@ p {
 }
 
 header {
-  //background-image: url("/assets/header-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 14vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .site-logo {
     align-self: center;
-
   }
 
   img {
@@ -49,39 +49,12 @@ header {
     }
   }
 
-  @include sm {
-    height: 100px;
+  &.collapsed {
+    height: 160px;
+    .header-section {
+      display: none;
+    }
   }
-}
-
-.main-row {
-  display: flex;
-  flex-direction: row;
-  @include sm {
-    flex-direction: column;
-  }
-}
-
-.main-sidebar {
-  background-color: $dark-grey;
-  width: 300px;
-  min-width: 300px;
-
-  @include sm {
-    width: 100%;
-    min-width: 20px;
-  }
-
-  a {
-    color: $light-grey;
-  }
-}
-
-.sidebar-section {
-  color: $light-grey;
-  border-bottom: 1px solid;
-  border-bottom-color: $light-grey;
-  padding: $padding-global;
 }
 
 .social-media-box {
@@ -89,72 +62,84 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 113px;
-  padding: 0;
-
-  background-color: $dark-grey;
+  margin-top: 48px;
 
   .social-media-button {
-    margin: 0 30px;
+    margin: 0 24px;
     align-self: center;
   }
 
   svg {
-    fill: $light-grey;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     transition: 0.3s;
 
     &:hover {
-      fill: darken($light-grey, 10%);
+      fill: darken($light-grey, 60%);
     }
   }
 }
 
-.email-subscribe-label {
-  display: block;
-  font-size: 1.6rem;
-  margin-bottom: $padding-global / 2;
-}
-
-.email-subscribe-form {
-  input[type=submit] {
-    color: $light-grey;
-  }
-
-  width: 100%;
+.email-subscribe-box {
+  width: 320px;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
 
-  label {
-
+  form {
+    width: 100%;
   }
 
   input[type=email] {
-    //width: 100%;
-    flex-grow: 1;
-    margin-right: 8px;
+    background-color: $light-grey;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: $dark-grey;
     color: $dark-grey;
-    //min-width: 60px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+  }
+
+  input[type=submit] {
+    visibility: hidden;
   }
 }
 
-.menu-box, .mobile-menu {
+.scroll-down-icon {
+  bottom: 16px;
+  position: absolute;
+}
+
+.main-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.menu, .mobile-menu {
 
   ul {
     list-style: none;
     margin-bottom: 0;
-    text-decoration: none;
   }
 
   li {
+    text-decoration: none;
     font-weight: 500;
     text-underline: none;
+    display: inline-block;
+    color: $light-grey;
+    margin: 0 24px;
+    font-style: italic;
+    letter-spacing: 0.6rem;
+    text-transform: lowercase;
   }
 }
 
-.menu-box {
+.menu {
   @include sm {
     display: none;
   }
@@ -173,6 +158,13 @@ header {
     color: $light-grey;
   }
 
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
   @include sm {
     &.visible {
       display: block;
@@ -182,52 +174,47 @@ header {
 
 .menu-button {
   display: none;
+  padding: 0;
+  height: 24px;
+
+  svg {
+    fill: $light-grey;
+  }
 
   @include sm {
     display: block;
   }
 }
 
-.section-header {
+.page-header {
   background-color: $dark-grey;
   padding: 16px;
   color: $light-grey;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   height: 112px;
+  width: 100%;
 
   h1 {
-    margin-bottom: 4px;
+    margin-bottom: 0;
+    font-style: italic;
+    letter-spacing: 2rem;
   }
 
   h1::before {
-    content: '— ';
+    content: '—';
   }
 
   @include sm {
     height: 88px;
-    //h1 {
-    //  margin-bottom: 12px;
-    //}
   }
-
 }
 
-.page-header {
-  svg {
-    fill: $light-grey;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-
-    &:hover {
-      fill: darken($light-grey, 10%);
-    }
-  }
-
-  flex-direction: row;
-  align-items: center;
+.page-content {
+  max-width: 800px;
+  align-self: center;
 }
 
 .section-releases {
@@ -266,6 +253,9 @@ header {
     object-fit: contain;
   }
 
+}
+
+.post-card, .post {
   h5 {
     margin-bottom: 0;
   }
@@ -277,11 +267,6 @@ header {
 
 hr {
   border-top: 1px solid darken($light-grey, 6%);
-  //margin: 0;
-}
-
-main {
-  flex-grow: 1;
 }
 
 .footer {
@@ -302,7 +287,6 @@ main {
 }
 
 .page {
-
   .about-image {
     max-height: 400px;
     max-width: 100%;

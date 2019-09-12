@@ -2,5 +2,9 @@
 layout: default
 ---
 <div class="post">
+    <div class="post-title-box">
+        <h5>{{page.title}}</h5>
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y"}}</span>
+    </div>
     {{ content }}
 </div>
