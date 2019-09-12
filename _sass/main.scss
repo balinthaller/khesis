@@ -9,8 +9,6 @@ $padding-global: 32px;
 
 html {
   scroll-behavior: smooth;
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
 }
 
 $screen-sm-max: 900px;
