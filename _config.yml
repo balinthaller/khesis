@@ -32,7 +32,6 @@ markdown: kramdown
 collections:
   - releases
   - mixes
-  - press
 
 collections_dir: content
 # Exclude from processing.
