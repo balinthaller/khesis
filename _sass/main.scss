@@ -38,10 +38,6 @@ header {
   justify-content: center;
   align-items: center;
 
-  .site-logo {
-    align-self: center;
-  }
-
   img {
     height: 6vw;
     @include sm {
@@ -72,10 +68,10 @@ header {
   svg {
     width: 32px;
     height: 32px;
-    transition: 0.3s;
+    transition: 0.15s;
 
     &:hover {
-      fill: darken($light-grey, 60%);
+      fill: darken($light-grey, 20%);
     }
   }
 }
@@ -108,8 +104,8 @@ header {
 }
 
 .scroll-down-icon {
-  bottom: 16px;
-  position: absolute;
+  position: relative;
+
 }
 
 .main-row {
@@ -132,6 +128,10 @@ header {
     text-underline: none;
     display: inline-block;
     color: $light-grey;
+    transition: 0.15s;
+    &:hover {
+      color: darken($light-grey, 20%);
+    }
     font-style: italic;
     text-transform: lowercase;
   }
@@ -143,7 +143,7 @@ header {
   }
   li {
     margin: 0 24px;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
   }
 
 }
@@ -203,13 +203,15 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 112px;
+  height: 88px;
   width: 100%;
 
   h1 {
     margin-bottom: 0;
     font-style: italic;
-    letter-spacing: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    margin-left: 24px;
 
     @include sm {
       //letter-spacing: 1.6rem;
@@ -220,9 +222,10 @@ header {
     content: '—';
   }
 
-  @include sm {
-    height: 88px;
-  }
+
+  // @include sm {
+  //   height: 64px;
+  // }
 }
 
 .page-content {

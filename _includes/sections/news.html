@@ -1,19 +1,21 @@
 <div class="section section-news">
     {% for post in site.posts %}
-        <div class="post-card">
-            <div class="post-content">
-                <div class="post-title-box">
-                    <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
-                    <span class="post-date">{{ post.date | date: "%B %-d, %Y"}}</span>
-                </div>
-                {{ post.content }}
+    <div class="post-card">
+        <div class="post-content">
+            <div class="post-title-box">
+                <a href="{{ post.url }}">
+                    <h5>{{ post.title }}</h5>
+                </a>
+                <span class="post-date">{{ post.date | date: "%B %-d, %Y"}}</span>
             </div>
-            {% if post.image %}
-            <img src="/assets/images/{{ post.image }}" alt="{{ post.title }}" />
-            {% endif %}
+            {{ post.content }}
         </div>
-        {% if forloop.last == false %}
-        <hr>
+        {% if post.image %}
+        <img src="/assets/images/{{ post.image }}" alt="{{ post.title }}" />
         {% endif %}
+    </div>
+    {% if forloop.last == false %}
+    <hr>
+    {% endif %}
     {% endfor %}
 </div>

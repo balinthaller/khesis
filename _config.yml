@@ -20,9 +20,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Creating sounds bordering on the physical and the impossibly electronic.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://khesis.com" # the base hostname & protocol for your site, e.g. http://example.com
+spotify_id: "5yO9sut5AzxeY2Pnvwnlxr"
+bandcamp_username: khesis
 soundcloud_username: khesis
 facebook_username: KhesisMusic
 instagram_username: balintkhesis
+twitter_username: khesismusic
 
 # Build settings
 markdown: kramdown
