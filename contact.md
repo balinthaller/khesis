@@ -5,5 +5,5 @@ permalink: /contact/
 html-class: contact
 ---
 
-Bookings & general enquiries: [info@khesis.com](mailto:info@khesis.com)
+Bookings & general enquiries: [balint@khesis.com](mailto:balint@khesis.com)
 
