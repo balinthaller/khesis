@@ -230,7 +230,13 @@ header {
 
 .page-content {
   max-width: 800px;
+  width: 100%;
+  padding: 0 16px;
   align-self: center;
+
+  @include sm {
+    padding: 0 8px;
+  }
 }
 
 .section-releases {
