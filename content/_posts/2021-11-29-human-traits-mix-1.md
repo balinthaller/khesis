@@ -7,7 +7,8 @@ title: "Human Traits mix vol. 1"
 I recently realised that most of the mixes that I made for various outlets are pretty dated, and don't really represent the music I'm making and am into recently.
 A friend recently showed me a bunch of tracks that I copied over to his USB around 3 years ago and I was horrified when I heard them.
 Of course I did a couple other bits since then, but my released tracks have been few and far between, and I need to keep my DJing chops oiled, so here it goes.
-Mostly broken beat things with a phyisical quality to them. The Human Traits name is mostly about art with traits that emulate a human touch, even if everything's done in the electronic realm.
+
+Mostly broken beat things with a phyisical quality to them. The Human Traits name is about art with traits that emulate a human touch, even if everything's done in the electronic realm – I'm pretty interested in this concept so I'll surely explore it a fair bit.
 
 Tracklist is below, and I'll post a download link to the mailing list shortly if there's demand.
 
