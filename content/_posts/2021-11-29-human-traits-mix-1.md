@@ -7,35 +7,40 @@ title: "Human Traits mix vol. 1"
 I recently realised that most of the mixes that I made for various outlets are pretty dated, and don't really represent the music I'm making and am into recently.
 A friend recently showed me a bunch of tracks that I copied over to his USB around 3 years ago and I was horrified when I heard them.
 Of course I did a couple other bits since then, but my released tracks have been few and far between, and I need to keep my DJing chops oiled, so here it goes.
+Some 
 
-### Tracklist
-DJ Rubio - Western Medicine
-FJAAK - Tomorrow
-Jessamine - Flutes (Kassem Mosse stille floeten mix)
-Jacques Greene - Real Time
-Giulia Tess - 200417
-Hugo Massien - Messier 77
-Nathan Micay - Choice & Consequence
-Joe - Get Centred
-Cameo Blush - §§§§§
-Pearson Sound - Thaw Cycle
-Overmono - Bby
-Nicholas - I Believe
-WxT - DWN
-Medlar & Pedestrian - T.R. Wilson
-Loods - Three Blocks
-ANF - Mauna Kea
-Lapien - A Change Is Gonna Come
-Al Wootton - JL (Priori Sharp Tool Mix)
-Delay Grounds - Ball_Run
-Tom VR - Acheless
-Pugilist - Seedling
-Anchoret - Pushpull
-Cameo Blush - Red Tarn
-Burland - Agbekor
-Khesis - Foray (Unreleased)
-EM + Stav - Afterglow
-VC-118A - Lost
-YT - Everyday
-Midland - Bring Joy
-Yushh - Gurtlushh
+Tracklist is below, and I'll post a download link to the mailing list shortly if there's demand.
+
+Thanks for listening!
+
+#### Tracklist
+* DJ Rubio - Western Medicine
+* FJAAK - Tomorrow
+* Jessamine - Flutes (Kassem Mosse stille floeten mix)
+* Jacques Greene - Real Time
+* Giulia Tess - 200417
+* Hugo Massien - Messier 77
+* Nathan Micay - Choice & Consequence
+* Joe - Get Centred
+* Cameo Blush - §§§§§
+* Pearson Sound - Thaw Cycle
+* Overmono - Bby
+* Nicholas - I Believe
+* WxT - DWN
+* Medlar & Pedestrian - T.R. Wilson
+* Loods - Three Blocks
+* ANF - Mauna Kea
+* Lapien - A Change Is Gonna Come
+* Al Wootton - JL (Priori Sharp Tool Mix)
+* Delay Grounds - Ball_Run
+* Tom VR - Acheless
+* Pugilist - Seedling
+* Anchoret - Pushpull
+* Cameo Blush - Red Tarn
+* Burland - Agbekor
+* Khesis - Foray (Unreleased)
+* EM + Stav - Afterglow
+* VC-118A - Lost
+* YT - Everyday
+* Midland - Bring Joy
+* Yushh - Gurtlushh
