@@ -1,3 +1,4 @@
+# coding: utf-8
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
@@ -14,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 4.2.1"
 
-  spec.add_development_dependency "bundler", "~> 2.2.10"
+  spec.add_development_dependency "bundler", "~> 2.3.16"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "sassc", "~> 2.4.0"
 end
